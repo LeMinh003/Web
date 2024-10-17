@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Thông Tin Sinh Viên</title>
+  </head>
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: red;
+      color: white;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .logo{
+      height: 50px;
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .text-logo {
+        background: white;
+        color: black;
+        padding: 7px 14px;
+        flex-grow: 1;
+    }
+
+    .navbar {
+    position: relative;
+    border-bottom: 1px solid gray;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+    .menu-icon img {
+      height: 30px; /* Adjust the size of the menu icon as needed */
+      cursor: pointer;
+    }
+
+    .dropdown-menu {
+      display: none; /* Hide menu by default */
+      position: absolute;
+      top: 40px; /* Position below the menu icon */
+      right: 0;
+      background-color: white;
+      color: black;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+      min-width: 150px;
+      z-index: 1;
+    }
+
+    .dropdown-menu a {
+      text-decoration: none;
+      color: black;
+      padding: 10px 15px;
+      display: block;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #ddd; /* Change background color on hover */
+    }
+
+    /* Show dropdown menu when hovering over menu-icon */
+    .menu-icon:hover .dropdown-menu {
+      display: block;
+    }
+
+    .student-info {
+      
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+
+    .text-heading{
+      text-align: center;
+      color:red;
+    }
+
+    .line{
+      height:10px;
+      background-color: orange;
+    }
+
+    .text-student{
+      color:red;
+    }
+
+    .student-info .avatar{
+      text-align: center;
+    }
+    .student-info .avatar img{
+      width: 150px;
+    }
+
+    .student-info .info {
+    width: 380px;
+    margin: auto;
+}
+
+footer{
+  height: 20px;
+  background-color: red;
+}
+  </style>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="https://th.bing.com/th?id=OIP.ZcC92sZdxRAGuM4W-zVlRQHaLA&w=205&h=304&c=8&rs=1&qlt=90&r=0&o=6&dpr=1.3&pid=3.1&rm=2" alt="Logo" />
+      </div>
+      <div class="text-logo">
+        <div>TRƯỜNG ĐẠI HỌC BÁCH KHOA HÀ NỘI</div>
+        <strong>CỔNG THÔNG TIN ĐÀO TẠO</strong>
+      </div>
+    </div>
+  </header>
+  <div class="navbar">
+    <div class="menu-icon">
+      &#9776; 
+      <div class="dropdown-menu">
+          <a href="#">Trang chủ</a>
+          <a href="#">Trang cá nhân</a>
+          <a href="#">Thông tin sinh viên</a>
+          <a href="#">Liên hệ</a>
+      </div>
+    </div>
+    </div>
+    <main>
+      <div class="text-heading">
+        <h2><strong>THÔNG TIN CÁ NHÂN</strong></h2>
+      </div>
+      <h2 class="text-student">Thông Tin Sinh Viên</h2>
+      <div class="line"></div>
+      <div class="student-info">
+        <div class="avatar">
+          <img
+            src="https://scontent.fhan9-1.fna.fbcdn.net/v/t39.30808-6/463380091_873162538333884_4283023949117215817_n.jpg?stp=dst-jpg_s600x600&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=cNzL0lMUt1AQ7kNvgFnYtuG&_nc_zt=23&_nc_ht=scontent.fhan9-1.fna&_nc_gid=AqA6OAVCI3EktPlvzR938Da&oh=00_AYDrWhnf9OcwUZR-g2teCnhlHGkg27QOIHuLUdymJlOkGA&oe=67168416"
+            alt="Student Photo"
+            />
+            <p>Mã Sinh Viên: 123456</p>
+        </div>
+        <div class="info">
+          <h2>Họ Và Tên: CON BÒ</h2>
+          <p>Năm nhập học: 2019</p>
+          <p>Bậc đào tạo : Đại học đại trà</p>
+          <p>Thông Tin Cơ Bản : Phần mềm sử dụng công nghệ C# winform và SQL Server giúp quản lý công việc cho thuê, quản lý nhân viên, quản lý xe và quản lý kho xe một cách linh hoạt tiện dụng, dễ sử dụng và bảo trì nâng cấp. Các lợi ích và mục tiêu của phần mềm nhằm giải phóng phần lớn sức lao động, số hóa các tài liệu liên quan từ đó dễ dàng tạo các bản báo cáo thống kê một cách nhanh chóng và trực quan nhất đến với người quản lý cửa hàng cho thuê.
+            Gồm các bộ phận:
+            </p>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
